@@ -1,0 +1,1 @@
+<img src="/logo/colored" alt="BTL бот логотип" srcset="">
