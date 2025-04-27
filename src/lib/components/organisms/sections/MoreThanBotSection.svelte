@@ -4,7 +4,7 @@
 	import Paragraph from '$lib/components/atoms/Paragraph.svelte';
 </script>
 
-<SectionBase background="bg-amber-50">
+<SectionBase>
 	<div class="flex flex-wrap items-center justify-between gap-20 lg:flex-nowrap">
 		<H2HugeColored>больше чем просто чат-бот</H2HugeColored>
 		<Paragraph>

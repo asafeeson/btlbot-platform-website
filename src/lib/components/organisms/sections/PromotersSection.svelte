@@ -30,7 +30,7 @@
 </script>
 
 {#snippet infoCard(title: string, body: string)}
-	<div class="rounded-xl border border-gray-200 p-5 hover:border-purple-500 hover:shadow-lg">
+	<div class="rounded-xl border border-gray-200 p-5 hover:border-purple-500 hover:shadow-lg transition-all">
 		<h4 class="mb-1.5 text-xl font-bold">{title}</h4>
 		<p>{body}</p>
 	</div>
