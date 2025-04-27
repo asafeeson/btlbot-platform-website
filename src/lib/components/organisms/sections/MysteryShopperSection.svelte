@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Anchor from '$lib/components/atoms/Anchor.svelte';
 	import H2HugeColored from '$lib/components/atoms/H2HugeColored.svelte';
 	import Paragraph from '$lib/components/atoms/Paragraph.svelte';
 	import SectionBase from '$lib/components/atoms/SectionBase.svelte';
@@ -45,6 +46,7 @@
 {/snippet}
 
 <SectionBase background="">
+	<Anchor anchor="mystery-shopper"></Anchor>
 	<H2HugeColored>Тайный Покупатель</H2HugeColored>
 	<span class="-mt-5 bg-pink-500 px-3 py-1 text-2xl text-white"
 		>Чат-бот для акций экономит до 70% времени на сбор и обработку данных</span
