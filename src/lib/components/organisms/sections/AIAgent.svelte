@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Anchor from '$lib/components/atoms/Anchor.svelte';
 	import H2HugeColored from '$lib/components/atoms/H2HugeColored.svelte';
 	import Paragraph from '$lib/components/atoms/Paragraph.svelte';
 	import SectionBase from '$lib/components/atoms/SectionBase.svelte';
@@ -27,9 +28,10 @@
 {/snippet}
 
 <SectionBase innerExtraClass="flex-col">
+	<Anchor anchor="ai-agent"></Anchor>
 	<H2HugeColored>AI-агенты</H2HugeColored>
 	<span class="-mt-5 bg-pink-500 px-3 py-1 text-2xl text-white"
-		>Ваш новый герой промо-акций и сотрудник без выходных !</span
+		>Ваш новый герой промо-акций и AI сотрудник без выходных !</span
 	>
 	<div class="flex gap-10">
 		<div
