@@ -4,10 +4,10 @@
 		name: string;
 	}
 	const menuList: MenuItem[] = [
-		{ name: 'ИИ Агенты', url: '/' },
-		{ name: 'BTL акции', url: '/' },
-		{ name: 'Промоутеры', url: '/' },
-		{ name: 'Тайный посетитель', url: '/' },
+		{ name: 'ИИ Агенты', url: '#ai-agent' },
+		{ name: 'BTL акции', url: '#btl-promo' },
+		{ name: 'Промоутеры', url: '#promoters' },
+		{ name: 'Тайный посетитель', url: '#mystery-shopper' },
 		{ name: 'Лояльность', url: '#what-you-get' },
 	];
 </script>
