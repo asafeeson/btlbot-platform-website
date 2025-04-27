@@ -1,5 +1,13 @@
 <script lang="ts">
-	let { children } = $props();
+	import type { Snippet } from 'svelte';
+
+	let { url = '/', children }: { url: string; children: Snippet } = $props();
+	
 </script>
 
-<a href="http://">{@render children()}</a>
+<a
+	href={url}
+	class="border-2 border-white px-5 py-4 transition-colors hover:bg-amber-500 hover:text-black"
+>
+	{@render children()}
+</a>
