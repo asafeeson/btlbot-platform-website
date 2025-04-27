@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SectionBase from '../SectionBase.svelte';
+	import SectionBase from '$lib/components/atoms/SectionBase.svelte';
 </script>
 
 <SectionBase background="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">

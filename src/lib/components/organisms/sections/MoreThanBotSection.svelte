@@ -1,6 +1,6 @@
 <script lang="ts">
-	import SectionBase from '../SectionBase.svelte';
-	import H2HugeColored from '../H2HugeColored.svelte';
+	import SectionBase from '$lib/components/atoms/SectionBase.svelte';
+	import H2HugeColored from '$lib/components/atoms/H2HugeColored.svelte';
 </script>
 
 <SectionBase background="bg-amber-50">

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Anchor from '../Anchor.svelte';
-	import H2HugeColored from '../H2HugeColored.svelte';
-	import SectionBase from '../SectionBase.svelte';
+	import Anchor from '$lib/components/atoms/Anchor.svelte';
+	import H2HugeColored from '$lib/components/atoms/H2HugeColored.svelte';
+	import SectionBase from '$lib/components/atoms/SectionBase.svelte';
 </script>
 
 <SectionBase background="">
