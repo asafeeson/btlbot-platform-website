@@ -1,5 +1,6 @@
 <script lang="ts">
 	import H2HugeColored from '$lib/components/atoms/H2HugeColored.svelte';
+	import Paragraph from '$lib/components/atoms/Paragraph.svelte';
 	import SectionBase from '$lib/components/atoms/SectionBase.svelte';
 	const infoCardData: Record<string, string>[] = [
 		{
@@ -30,7 +31,9 @@
 </script>
 
 {#snippet infoCard(title: string, body: string)}
-	<div class="rounded-xl border border-gray-200 p-5 hover:border-purple-500 hover:shadow-lg transition-all">
+	<div
+		class="rounded-xl border border-gray-200 p-5 transition-all hover:border-purple-500 hover:shadow-lg"
+	>
 		<h4 class="mb-1.5 text-xl font-bold">{title}</h4>
 		<p>{body}</p>
 	</div>
@@ -38,16 +41,18 @@
 
 <SectionBase background="white">
 	<H2HugeColored>Промоутеры</H2HugeColored>
-	<p>
-		BTLbot делает работу промоутеров максимально эффективной за счет снижения нагрузки с
-		супервайзера и самих промоутеров. Что позволяет им сфокусироваться на продажах. Платформа
-		управляет работой промоутеров, помогает супервайзеру и собирает всю необходимую статистику.
-	</p>
-	<p>Всё это — в Telegram - Без приложений - Без сложных установок - Без потерь информации</p>
-	<p>
-		Сотрудники, промоутеры, супервайзеры и клиенты — все работают через привычный интерфейс, который
-		не требует обучения.
-	</p>
+	<div>
+		<Paragraph>
+			BTLbot делает работу промоутеров максимально эффективной за счет снижения нагрузки с
+			супервайзера и самих промоутеров. Что позволяет им сфокусироваться на продажах. Платформа
+			управляет работой промоутеров, помогает супервайзеру и собирает всю необходимую статистику.
+		</Paragraph>
+		<Paragraph>Всё это — в Telegram - Без приложений - Без сложных установок - Без потерь информации</Paragraph>
+		<Paragraph>
+			Сотрудники, промоутеры, супервайзеры и клиенты — все работают через привычный интерфейс,
+			который не требует обучения.
+		</Paragraph>
+	</div>
 	<h3>Возможности платформы</h3>
 	<div class="grid grid-cols-1 gap-5 md:grid-cols-3">
 		{#each infoCardData as data}
