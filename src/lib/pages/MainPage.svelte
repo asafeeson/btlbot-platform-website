@@ -8,6 +8,7 @@
 	import MysteryShopperSection from '$lib/components/organisms/sections/MysteryShopperSection.svelte';
 	import LoyaltySection from '$lib/components/organisms/sections/LoyaltySection.svelte';
 	import WhatYouGetSection from '$lib/components/organisms/sections/WhatYouGetSection.svelte';
+	import AiAgent from '$lib/components/organisms/sections/AIAgent.svelte';
 </script>
 
 <Header></Header>
@@ -20,4 +21,5 @@
 	<MysteryShopperSection></MysteryShopperSection>
 	<LoyaltySection></LoyaltySection>
 	<WhatYouGetSection></WhatYouGetSection>
+	<AiAgent></AiAgent>
 </main>
