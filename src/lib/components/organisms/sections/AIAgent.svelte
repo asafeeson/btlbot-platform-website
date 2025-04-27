@@ -15,14 +15,14 @@
 	</div>
 {/snippet}
 
-{#snippet attractiveBullets(number: string, title: string, color: string)}
+{#snippet attractiveBullets(number: string, title: string, color: string, font: string = 'medium')}
 	<div class="flex items-center gap-3">
 		<span
-			class="flex min-h-10 min-w-10 items-center justify-center rounded bg-{color}-500 font-medium text-white"
+			class={'flex min-h-10 min-w-10 items-center justify-center rounded font-medium text-white ' + color}
 		>
 			{number}
 		</span>
-		<p class="w-fit font-medium">{title}</p>
+		<p class="w-fit font-{font}">{title}</p>
 	</div>
 {/snippet}
 
@@ -46,11 +46,11 @@
 			</p>
 			<p>С его помощью вы можете:</p>
             <div class="space-y-4">
-				{@render attractiveBullets('1', 'Проводить автоматическое анкетирование', 'pink')}
-				{@render attractiveBullets('2', 'Формировать контракты и методички для сотрудников', 'purple')}
-				{@render attractiveBullets('3', 'Создавать отчёты и маркетинговые стратегии', 'blue')}
-				{@render attractiveBullets('5', 'Строить SEO-ядра для сайтов', 'green')}
-				{@render attractiveBullets('6', 'Организовать работу команды быстрее и проще', 'amber')}
+				{@render attractiveBullets('1', 'Проводить автоматическое анкетирование', 'bg-blue-300')}
+				{@render attractiveBullets('2', 'Формировать контракты и методички для сотрудников', 'bg-blue-400')}
+				{@render attractiveBullets('3', 'Создавать отчёты и маркетинговые стратегии', 'bg-blue-500')}
+				{@render attractiveBullets('5', 'Строить SEO-ядра для сайтов', 'bg-blue-600')}
+				{@render attractiveBullets('6', 'Организовать работу команды быстрее и проще', 'bg-blue-700')}
 			</div>
 
 		</div>
@@ -74,9 +74,9 @@
 				и оплате.
 			</p>
 			<div class="space-y-4">
-				{@render attractiveBullets('1', 'Больше продаж', 'pink')}
-				{@render attractiveBullets('2', 'Меньше затрат', 'purple')}
-				{@render attractiveBullets('3', 'Максимальная скорость реакции', 'blue')}
+				{@render attractiveBullets('1', 'Больше продаж', 'bg-pink-400')}
+				{@render attractiveBullets('2', 'Меньше затрат', 'bg-pink-600')}
+				{@render attractiveBullets('3', 'Максимальная скорость реакции', 'bg-pink-800')}
 			</div>
 		</div>
 		<div
@@ -90,17 +90,17 @@
 				ярче и интереснее. Эмоции, вовлеченность и вау-эффект — без лишних затрат на персонал.
 			</p>
 			<div class="space-y-4">
-				{@render attractiveBullets('1', 'Бариста, который помогает выбрать идеальный кофе', 'pink')}
+				{@render attractiveBullets('1', 'Бариста, который помогает выбрать идеальный кофе', 'bg-purple-300')}
 				{@render attractiveBullets(
 					'2',
 					'Дерматолог, который советует косметику под ваш тип кожи',
-					'purple'
+					'bg-purple-400'
 				)}
-				{@render attractiveBullets('3', 'Фармацевт, который подбирает витамины и БАДы', 'blue')}
+				{@render attractiveBullets('3', 'Фармацевт, который подбирает витамины и БАДы', 'bg-purple-500')}
 				{@render attractiveBullets(
 					'4',
 					'Или даже творческий AI-художник, который создаёт уникальные картинки по фото участников',
-					'green'
+					'bg-purple-600'
 				)}
 			</div>
 		</div>
