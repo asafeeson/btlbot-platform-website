@@ -11,11 +11,13 @@
 </script>
 
 <Header></Header>
-<HeroSection></HeroSection>
-<SubHeroMenuSection></SubHeroMenuSection>
-<MoreThanBotSection></MoreThanBotSection>
-<PromotersSection></PromotersSection>
-<PromoBtlSection></PromoBtlSection>
-<MysteryShopperSection></MysteryShopperSection>
-<LoyaltySection></LoyaltySection>
-<WhatYouGetSection></WhatYouGetSection>
+<main>
+	<HeroSection></HeroSection>
+	<SubHeroMenuSection></SubHeroMenuSection>
+	<MoreThanBotSection></MoreThanBotSection>
+	<PromotersSection></PromotersSection>
+	<PromoBtlSection></PromoBtlSection>
+	<MysteryShopperSection></MysteryShopperSection>
+	<LoyaltySection></LoyaltySection>
+	<WhatYouGetSection></WhatYouGetSection>
+</main>
