@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Anchor from '$lib/components/atoms/Anchor.svelte';
 	import H2HugeColored from '$lib/components/atoms/H2HugeColored.svelte';
 	import Paragraph from '$lib/components/atoms/Paragraph.svelte';
 	import SectionBase from '$lib/components/atoms/SectionBase.svelte';
@@ -40,6 +41,7 @@
 {/snippet}
 
 <SectionBase background="white">
+	<Anchor anchor="promoters"></Anchor>
 	<H2HugeColored>Промоутеры</H2HugeColored>
 	<div>
 		<Paragraph>
