@@ -4,6 +4,6 @@
 	let { children, extraClass }: { children: Snippet, extraClass?: string } = $props();
 </script>
 
-<p class="w-fit text-xl {extraClass}">
+<p class="w-fit text-xl/relaxed {extraClass}">
 	{@render children()}
 </p>
